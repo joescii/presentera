@@ -3,3 +3,4 @@ console.devmode.log
 target/
 project/project
 project/target
+project/sbt-launch.jar
