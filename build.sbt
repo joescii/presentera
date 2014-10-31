@@ -1,6 +1,6 @@
-name := "my-presentation"
+name := "presentera"
 
-version := "0.0.1"
+version := "0.1.0"
 
 organization := "net.liftweb"
 
