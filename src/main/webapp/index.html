@@ -337,15 +337,16 @@
     Just sayin' ;)
     
 -->
-<div class="hint">
-    <p>Use a spacebar or arrow keys to navigate</p>
+<div data-lift="Host.ifLocal">
+  <div class="hint">
+      <p>Use a spacebar or arrow keys to navigate</p>
+  </div>
+  <script>
+  if ("ontouchstart" in document.documentElement) {
+      document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+  }
+  </script>
 </div>
-<script>
-if ("ontouchstart" in document.documentElement) { 
-    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-}
-</script>
-
 <!--
     
     Last, but not least.
