@@ -714,7 +714,7 @@ a:focus {
   border: 2px solid;
   padding: 5px;
   margin: 5px;
-  background: rgb(214,220,222); /* Old browsers */
+  background: rgb(240, 240, 240); /* Old browsers */
 }
 
 #slide-controls div {
