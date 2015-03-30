@@ -57,8 +57,15 @@ case $1 in
 		;;
 esac
 
+if [ ${JAVA_HOME} ]; then
+    # Run from JAVA_HOME
+    JAVA=${JAVA_HOME}/bin/java
+else
+    # Run from PATH
+    JAVA=java
+fi
 
-java -ea -server ${JAVA_OPTS} ${SBT_OPTS}		\
+${JAVA} -ea -server ${JAVA_OPTS} ${SBT_OPTS}		\
 	-XX:+AggressiveOpts             		\
 	-XX:+OptimizeStringConcat			\
 	-XX:+UseConcMarkSweepGC               		\
